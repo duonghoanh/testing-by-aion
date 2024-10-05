@@ -3,128 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>AION Card</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header class="header">
-      <h3 class="header-title">Bài test</h3>
-      <button class="header-btn_copy">Copy chữ ký</button>
-    </header>
-    <main class="main">
-      <div class="main-top-navbar">
-        <div class="main-top-navbar-item active">
-          <i class="fa-regular fa-user"></i>
-          <span>Chi tiết</span>
-        </div>
-        <div class="main-top-navbar-item">
-          <i class="fa-regular fa-share-from-square"></i>
-          <span>Links</span>
-        </div>
-        <div class="main-top-navbar-item">
-          <i class="fa-solid fa-sliders"></i>
-          <span>Thiết kế</span>
+    <div class="container">
+      <div class="header">
+        <h1>Bài test</h1>
+        <button class="copy-button">Copy Chữ Ký</button>
+      </div>
+      <div class="header">
+        <div class="tabs">
+          <button class="tab active">
+            <i class="fa-regular fa-user"></i> Chi tiết
+          </button>
+          <button class="tab">
+            <i class="fa-regular fa-share-from-square"></i> Links
+          </button>
+          <button class="tab">
+            <i class="fa-solid fa-sliders"></i> Thiết kế
+          </button>
         </div>
       </div>
-      <div class="main-content">
-        <section class="settings-section">
-          <div class="settings-section-container-info">
-            <h5>Thông tin cá nhân</h5>
-            <div class="settings-section-container-info-item">
-              <label for="fullName">Họ và tên</label>
-              <input name="fullName" type="text" />
+      <div class="content">
+        <div class="sidebar active">
+          <div class="form-section">
+            <h2>Thông tin cá nhân</h2>
+            <div class="input-group">
+              <label for="name">Họ và tên</label>
+              <input type="text" id="name" placeholder="Duong Thanh Nghe 127" />
             </div>
-            <div class="settings-section-container-info-item">
+            <div class="input-group">
               <label for="nickname">Biệt danh</label>
-              <input name="nickname" type="text" />
+              <input type="text" id="nickname" />
             </div>
-            <div class="settings-section-container-info-item">
+            <div class="input-group">
               <label for="position">Chức danh</label>
-              <input name="position" type="text" />
+              <input type="text" id="position" placeholder="Manager" />
             </div>
           </div>
-          <div class="settings-section-container-details">
-            <h5>Chi tiết</h5>
-            <div class="settings-section-form-details-item">
+          <div class="form-section">
+            <h2>Chi tiết</h2>
+            <div class="input-group">
               <label for="phone"><i class="fa-solid fa-phone"></i> Phone</label>
-              <input name="phone" type="text" />
+              <input type="tel" id="phone" placeholder="0365305920" />
             </div>
-            <div class="settings-section-form-details-item">
+            <div class="input-group">
               <label for="email"
                 ><i class="fa-solid fa-envelope"></i> Email</label
               >
-              <input name="email" type="text" />
+              <input
+                type="email"
+                id="email"
+                placeholder="duongthanhnghe120796@gmail.com"
+              />
             </div>
-            <div class="settings-section-form-details-item">
+            <div class="input-group">
               <label for="address"
-                ><i class="fa-solid fa-address-book"></i> Địa chỉ</label
+                ><i class="fa-solid fa-location-dot"></i> Địa chỉ</label
               >
-              <input name="address" type="text" />
+              <input type="text" id="address" placeholder="Đà Nẵng" />
             </div>
-            <div class="settings-section-form-details-item">
+            <div class="input-group">
               <label for="website"
                 ><i class="fa-solid fa-globe"></i> Website</label
               >
-              <input name="website" type="text" />
+              <input type="url" id="website" placeholder="aioncard.vn" />
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="profile-section">
-          <div class="profile-section-content">
-            <div class="email-card">
-              <p>Đến: <strong>Email người nhận</strong></p>
-              <p>Chủ đề: <strong>Kiểm tra chữ ký email mới của tôi!</strong></p>
+        <div class="sidebar">
+          link
+          <div class="link-item">
+            <!-- facebook -->
+
+            <label for="facebook-link">
+              <a href="#" class="social-icon facebook"
+                ><i class="fab fa-facebook-f"></i></a
+              >Facebook</label
+            >
+            <input type="text" id="facebook-link" class="link-item__input" />
+          </div>
+          <div class="link-item">
+            <!-- instagram -->
+
+            <label for="instagram-link">
+              <a href="#" class="social-icon instagram"
+                ><i class="fab fa-instagram"></i></a
+              >Instagram</label
+            >
+            <input type="text" id="instagram-link" class="link-item__input" />
+          </div>
+          <div class="link-item">
+            <!-- twitter -->
+
+            <label for="twitter-link">
+              <a href="#" class="social-icon twitter"
+                ><i class="fab fa-twitter"></i></a
+              >Twitter</label
+            >
+            <input type="text" id="twitter-link" class="link-item__input" />
+          </div>
+          <div class="link-item">
+            <!-- youtube -->
+
+            <label for="youtube-link">
+              <a href="#" class="social-icon youtube"
+                ><i class="fab fa-youtube"></i></a
+              >Youtube</label
+            >
+            <input type="text" id="youtube-link" class="link-item__input" />
+          </div>
+          <div class="link-item">
+            <!-- linkin -->
+
+            <label for="linkin-link">
+              <a href="#" class="social-icon linkin"
+                ><i class="fab fa-linkedin"></i></a
+              >Linkin</label
+            >
+            <input type="text" id="linkin-link" class="link-item__input" />
+          </div>
+
+          <div class="link-item__icon">
+            <!-- all icon link -->
+            <a href="#" class="social-icon facebook"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon instagram"
+              ><i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon twitter"
+              ><i class="fab fa-twitter"></i>
+            </a>
+            <!-- youtube -->
+            <a href="#" class="social-icon youtube"
+              ><i class="fab fa-youtube"></i>
+            </a>
+            <!-- linkerin -->
+            <a href="#" class="social-icon linkin"
+              ><i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          màu chủ dạo
+          <div class="color-picker">
+            <h2>Chọn màu</h2>
+            <div class="color-palette">
+              <div class="color choose" style="background-color: #ff0000"></div>
+              <div class="color" style="background-color: #00ff00"></div>
+              <div class="color" style="background-color: #0000ff"></div>
+              <div class="color" style="background-color: #ffff00"></div>
+              <div class="color" style="background-color: #ff00ff"></div>
+              <div class="color" style="background-color: #00ffff"></div>
             </div>
-
-            <div class="profile-info">
-              <div class="profile-info-details">
-                <h3 class="profile-info-details_name"></h3>
-                <p class="profile-info-details_position"></p>
-                <p class="profile-info-details_phone">
-                  <i class="fas fa-phone"></i>
-                  <span>Điện thoại:</span> 
+          </div>
+          <div class="font-picker">
+            <h2>Chọn font</h2>
+            <select name="font" id="font">
+              <option value="Poppins">Poppins</option>
+              <option value="Arial">Arial</option>
+              <option value="Roboto">Roboto</option>
+              <option value="Montserrat">Montserrat</option>
+            </select>
+          </div>
+        </div>
+        <div class="card-preview">
+          <div class="email-info">
+            <p><span>Đến:</span> Email người nhận</p>
+            <p><span>Chủ đề:</span> Kiểm tra chữ ký email mới của tôi!</p>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-text">
+                <h2>Duong Thanh Nghe 127</h2>
+                <p class="position">Manager</p>
+                <p><i class="fa-solid fa-phone"></i> Điện thoại: 0365305920</p>
+                <p>
+                  <i class="fa-solid fa-envelope"></i> Email:
+                  duongthanhnghe120796@gmail.com
                 </p>
-                <p class="profile-info-details_email">
-                  <i class="fas fa-envelope"></i> <span>Email:</span>
-                 
-                </p>
-                <p class="profile-info-details_address">
-                  <i class="fas fa-map-marker-alt"></i> <span>Địa chỉ:</span> 
-                </p>
-                <p class="profile-info-details_website">
-                  <i class="fas fa-globe"></i> <span>Website:</span> 
-                </p>
+                <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: Đà Nẵng</p>
+                <p><i class="fa-solid fa-globe"></i> Website: aioncard.vn</p>
+                <p class="social-links facebook"></p>
+                <p class="social-links instagram"></p>
+                <p class="social-links twitter"></p>
+                <p class="social-links youtube"></p>
+                <p class="social-links linkin"></p>
               </div>
-
-              <div class="social-profile">
+              <div class="card-image">
                 <img
-                  src="https://www.shutterstock.com/image-photo/golden-retriever-puppy-sitting-front-600nw-2505530635.jpg"
+                  src="https://via.placeholder.com/150"
                   alt="Profile Picture"
-                  width="200px"
-                  height="200px"
                 />
-                <div class="social-profile-icons">
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-twitter"></i>
+                <div class="social-icons">
+                  <a href="#" class="social-icon facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social-icon instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="social-icon twitter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+
+                  <a href="#" class="social-icon youtube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a href="#" class="social-icon linkin"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-    </main>
-    <script src="./index.js"></script>
+    </div>
   </body>
+  <script src="index.js"></script>
 </html>
